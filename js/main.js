@@ -15,10 +15,10 @@ xhr.onreadystatechange = function () {
     // }
 
     // console.log(records['news']);
-    var statusHTML = '<ul class="bulleted">';
+    var statusHTML = '<ul>';
     for (var i=0; i< news.length; i += 1) {
       statusHTML += '<li>';
-      statusHTML += '<div class="newsitem"><h3 class="title">' + news[i].title + '</h3>';
+      statusHTML += '<div class="newsitem b-lazy"><h3 class="title">' + news[i].title + '</h3>';
       statusHTML += '<h4>' + news[i].published + '</h4></div>';
       statusHTML += '</li>';
     }
